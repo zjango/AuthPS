@@ -1,7 +1,7 @@
 <?php
 
-use Toddish\Verify\Models\User,
-	Toddish\Verify\Helpers\Verify as VerifyHelper;
+use Zjango\Verify\Models\User,
+	Zjango\Verify\Helpers\Verify as VerifyHelper;
 
 class VerifyTest extends TestCase
 {
@@ -11,17 +11,17 @@ class VerifyTest extends TestCase
 
 		Artisan::call('migrate');
 
-		$super_admin_role = Toddish\Verify\Models\Role::create([
+		$super_admin_role = Zjango\Verify\Models\Role::create([
 			'name' => config('verify.super_admin'),
 			'level' => 10
 		]);
 
-		$admin_role = Toddish\Verify\Models\Role::create([
+		$admin_role = Zjango\Verify\Models\Role::create([
 			'name' => 'Admin',
 			'level' => 7
 		]);
 
-		$create_permission = Toddish\Verify\Models\Permission::create([
+		$create_permission = Zjango\Verify\Models\Permission::create([
 			'name' => 'create_users'
 		]);
 

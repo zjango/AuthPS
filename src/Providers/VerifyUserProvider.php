@@ -1,5 +1,5 @@
 <?php
-namespace Toddish\Verify\Providers;
+namespace Zjango\Verify\Providers;
 
 use Illuminate\Contracts\Auth\UserProvider,
 	Illuminate\Auth\EloquentUserProvider,

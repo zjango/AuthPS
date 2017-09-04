@@ -1,9 +1,9 @@
 <?php
 
-namespace Toddish\Verify\Providers;
+namespace Zjango\Verify\Providers;
 
 use Illuminate\Support\ServiceProvider,
-	Toddish\Verify\Auth\VerifyGuard;
+	Zjango\Verify\Auth\VerifyGuard;
 
 class VerifyServiceProvider extends ServiceProvider
 {
@@ -39,9 +39,9 @@ class VerifyServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$this->commands([
-			'Toddish\Verify\Commands\AddPermission',
-			'Toddish\Verify\Commands\AddCrudPermissions',
-			'Toddish\Verify\Commands\AddRole'
+			'Zjango\Verify\Commands\AddPermission',
+			'Zjango\Verify\Commands\AddCrudPermissions',
+			'Zjango\Verify\Commands\AddRole'
 		]);
 	}
 }

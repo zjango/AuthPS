@@ -1,10 +1,10 @@
 <?php
 
-namespace Toddish\Verify\Auth;
+namespace Zjango\Verify\Auth;
 
 use Illuminate\Auth\Guard,
 	Illuminate\Contracts\Auth\Guard as GuardContract,
-	Toddish\Verify\Helpers\Verify as VerifyHelper;
+	Zjango\Verify\Helpers\Verify as VerifyHelper;
 
 class VerifyGuard extends Guard implements GuardContract
 {

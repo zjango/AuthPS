@@ -1,6 +1,6 @@
 <?php
 
-namespace Toddish\Verify\Models;
+namespace Zjango\Verify\Models;
 
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract,
 	Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract,

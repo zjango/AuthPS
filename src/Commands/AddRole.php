@@ -1,6 +1,6 @@
 <?php
 
-namespace Toddish\Verify\Commands;
+namespace Zjango\Verify\Commands;
 
 use Illuminate\Console\Command,
 	Symfony\Component\Console\Input\InputOption,

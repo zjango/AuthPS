@@ -1,6 +1,6 @@
 <?php
 
-namespace Toddish\Verify\Helpers;
+namespace Zjango\Verify\Helpers;
 
 class Verify
 {

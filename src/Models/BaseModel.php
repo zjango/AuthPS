@@ -1,5 +1,5 @@
 <?php
-namespace Toddish\Verify\Models;
+namespace Zjango\Verify\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

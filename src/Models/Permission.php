@@ -1,6 +1,6 @@
 <?php
 
-namespace Toddish\Verify\Models;
+namespace Zjango\Verify\Models;
 
 class Permission extends BaseModel
 {

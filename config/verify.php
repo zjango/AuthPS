@@ -12,9 +12,9 @@ return [
 
 	// Define Models if you extend them
 	'models' => [
-		'user' => 'Toddish\Verify\Models\User',
-		'role' => 'Toddish\Verify\Models\Role',
-		'permission' => 'Toddish\Verify\Models\Permission',
+		'user' => 'Zjango\Verify\Models\User',
+		'role' => 'Zjango\Verify\Models\Role',
+		'permission' => 'Zjango\Verify\Models\Permission',
 	],
 
 	'crud_permissions' => [
