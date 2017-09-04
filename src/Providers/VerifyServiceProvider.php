@@ -2,13 +2,32 @@
 
 namespace Zjango\Verify\Providers;
 
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider,
 	Zjango\Verify\Auth\VerifyGuard;
 
 class VerifyServiceProvider extends ServiceProvider
 {
+
+    protected $policies = [];
+
 	public function boot()
 	{
+
+        // $this->registerPolicies();
+
+        foreach ($this->policies as $key => $value) {
+            Gate::policy($key, $value);
+        }
+
+
+        \Auth::provider('verify', function ($app, array $config) {
+            return new VerifyUserProvider($this->app['hash'], $config['model']);
+        });
+
+
+
+
 		$this->publishes([
 			__DIR__ . '/../../config/verify.php' => config_path('verify.php')
 		], 'config');
@@ -34,6 +53,7 @@ class VerifyServiceProvider extends ServiceProvider
 			);
 
 		});
+
 	}
 
 	public function register()

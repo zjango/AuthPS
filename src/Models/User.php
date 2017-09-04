@@ -43,26 +43,26 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
 		$this->attributes['salt'] = $salt;
 	}
 
-	public function is($roles)
-	{
-		$roles = !is_array($roles)
-			? [$roles]
-			: $roles;
+	// public function is($roles)
+	// {
+	// 	$roles = !is_array($roles)
+	// 		? [$roles]
+	// 		: $roles;
 
-		$to_check = $this->getToCheck();
+	// 	$to_check = $this->getToCheck();
 
-		$valid = false;
-		foreach ($to_check->roles as $role)
-		{
-			if (in_array($role->name, $roles))
-			{
-				$valid = true;
-				break;
-			}
-		}
+	// 	$valid = false;
+	// 	foreach ($to_check->roles as $role)
+	// 	{
+	// 		if (in_array($role->name, $roles))
+	// 		{
+	// 			$valid = true;
+	// 			break;
+	// 		}
+	// 	}
 
-		return $valid;
-	}
+	// 	return $valid;
+	// }
 
 	public function can($permissions)
 	{
